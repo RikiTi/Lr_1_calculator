@@ -1,8 +1,8 @@
 """Module for implementation math operations in different calculators"""
-from math_operations.addition import AdditionInterface
-from math_operations.division import DivisionInterface
-from math_operations.subtraction import SubtractionInterface
-from math_operations.multiplication import MultiplicationInterface
+from math_operations_interfaces.addition import AdditionInterface
+from math_operations_interfaces.division import DivisionInterface
+from math_operations_interfaces.subtraction import SubtractionInterface
+from math_operations_interfaces.multiplication import MultiplicationInterface
 
 
 class EngineeringCalculator(AdditionInterface, SubtractionInterface, DivisionInterface, MultiplicationInterface):

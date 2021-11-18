@@ -23,7 +23,7 @@ class TestCalculator(TestCase):
 
     @patch(target='calculators.EconomicalCalculator.division', return_value=2.25)
     def test_division(self, func):
-        """Method for test and check division function with exception"""
+        """Method for test and check division function"""
         answer = func(9, 14)
         self.assertAlmostEqual(answer, 2.25)
 
